@@ -1,7 +1,7 @@
 #Tristen Allen
 #tristen.allen@gatech.edu 903035156
 #Rasheed Lewis
-#email gtid
+#rlewis67@gatech.edu 903138303
 #We worked on this homework assignment alone,
 #using only this semester's course materials.
 

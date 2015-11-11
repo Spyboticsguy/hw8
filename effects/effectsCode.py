@@ -4,15 +4,27 @@
 #email gtid
 #We worked on this homework assignment alone,
 #using only this semester's course materials.
-
 from Myro import *
 
-init()
-
+#function that applies effects. Requires filmingCode.main() to have been run already.
+#or for its generated files to be present in the "filming" directory
+def main():
+    fadeOrig = makePicture("../filming/fade.png")
+    splitOrig = [loadPictures("../filming/split1.gif"), loadPictures("../filming/split2.gif")]
+    flashOrig = makePicture("../filming/flash.png")
+    
+    fadePic = fadeTrans(fadeOrig, True)
+    splitPic = splitTrans(splitOrig[0], splitOrig[1])
+    flashPic = redTrans(flashOrig)
+    
+    savePicture(fadePic, "processed/fade.gif")
+    savePicture(splitPic, "processed/split.gif")
+    savePicture(flashPic, "processed/flash2.png")
+    
 def fadeTrans(p, reverse):
     fadeGif = [copyPicture(p)]
     
-    for i in range(20):
+    for i in range(19):
         newPic = copyPicture(fadeGif[i])
         for pixel in getPixels(newPic):
             r,g,b = getRGB(pixel)
@@ -29,10 +41,13 @@ def fadeTrans(p, reverse):
             
             setColor(pixel, makeColor(r,g,b))
         fadeGif.append(newPic)
-	if reversed = True:
-		fadeGif = fadeGif[::-1]
-    return fadeGif
-	
+        
+    if reverse == True:
+        reversedGif = fadeGif[::-1]
+        return reversedGif
+    else:
+        return fadeGif
+
 def splitTrans(scene1, scene2):
     splitScene = [] 
     picHalf = getWidth(scene1[0]) // 2
@@ -57,16 +72,3 @@ def redTrans(p):
         setRed(pixel, getRed(pixel) + 50)
     
     return p
-
-def savePicture(pic, gif):
-	folder = pickAFolder()
-
-	filename = folder + "/" + input("Please choose a filename.")
-
-	if folder == None or filename == None:
-		return
-	
-	if gif == True:
-		savePicture(pic, filename + ".gif")
-	else:
-		savePicture(p, filename + ".png")

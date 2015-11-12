@@ -1,0 +1,20 @@
+Tristen Allen
+tristen.allen@gatech.edu 903035156
+Rasheed Lewis
+add yourself here
+We worked on this homework assignment alone, using only this semester's course materials.
+
+The Movie
+	We created a film that spoofed on the popular use of robots as 'spy devices,'
+	controlled via laptop. The film uses special effects to simulate a spy robot
+	'booting up,' scanning the area once it locates a target object, then flashing red
+	in order to indicate an alarm or some other type of problem. The non-robot-filmed
+	footage was used to futher clarify this premise and give context to the sequence
+	filmed by the robot itself.
+
+Deviations from Specifications
+	We combined the filming and acting code into a single file - filmingActingCode.py.
+	This was done in pursuit of the narrative of the film - it makes sense that the robot, as a
+	surveillance device, would capture or stream a first-person view of its surroundings. It was
+	also necessary to move and film to create some of the special effects used in the film, making it
+	a more desirable approach to combine the two code files overall.

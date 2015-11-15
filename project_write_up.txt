@@ -18,3 +18,9 @@ Deviations from Specifications
 	surveillance device, would capture or stream a first-person view of its surroundings. It was
 	also necessary to move and film to create some of the special effects used in the film, making it
 	a more desirable approach to combine the two code files overall.
+	
+Other Notes
+	If you have not done so, please check README.txt for additional info on the locations of individual files,
+	as well as important information on running the project.
+	For the most part, this should be self-explanatory, but if you have any questions, the README should answer them.
+	

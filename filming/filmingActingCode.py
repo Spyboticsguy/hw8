@@ -1,3 +1,11 @@
+###Tristen Allen
+###tristen.allen@gatech.edu
+###Rasheed Lewis
+###rlewis67@gatech.edu
+###CS1301 C04
+###We worked on this assignment alone,
+###using only this semester's course materials.
+
 from Myro import *
 
 #init()

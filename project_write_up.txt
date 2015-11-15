@@ -24,3 +24,5 @@ Other Notes
 	as well as important information on running the project.
 	For the most part, this should be self-explanatory, but if you have any questions, the README should answer them.
 	
+	Please do note that the individual python files are located in hw8.zip, for the purpose of maintaining
+	a specific directory structure.
